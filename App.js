@@ -1,11 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import { Header, Divider } from "react-native-elements";
+import { Header } from "react-native-elements";
+import Menu from "./src/components/Menu";
 
-function test() {
-  console.log("test");
-}
 export default function App() {
   return (
     <View>
@@ -17,11 +15,7 @@ export default function App() {
           console.log("home");
         }} />}
       />
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Divider />
-        <Button title="test"></Button>
-      </View>
+      <Menu />
       <StatusBar style="auto" />
     </View>
   );
